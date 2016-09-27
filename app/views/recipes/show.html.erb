@@ -1,2 +1,15 @@
 <h3><%= @my_recipe.name %></h3>
+
+  <% @my_recipe_ingredients.each do |recipe_ingredient| %>
+    <li>
+      <%= recipe_ingredient.name %>
+    </li>
+  <% end %>
+
+  <% @ingredient_amount.each do |amount| %>
+    <li>
+      <%= amount.amount %>
+    </li>
+  <% end %>
+
 <p><%= @my_recipe.description %></p>
