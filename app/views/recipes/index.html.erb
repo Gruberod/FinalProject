@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<table>
+  <tr>
+    <th>Recipes</th>
+  </tr>
+  <%= @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.name %></td>
+    </tr>
+  <% end %>
+</table>
