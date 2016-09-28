@@ -1,5 +1,5 @@
 <h3><%= @my_recipe.name %></h3>
-
+<img src=<%= @my_recipe.avatar.url %> alt="">
   <% @my_recipe_ingredients.each do |recipe_ingredient| %>
     <li>
       <%= recipe_ingredient.name %>
