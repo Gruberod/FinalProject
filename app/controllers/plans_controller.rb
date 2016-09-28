@@ -7,6 +7,12 @@ class PlansController < ApplicationController
 
   end
 
+  def update
+    plan = Plan.find_by(id: params[:id])
+    plan.recipes.push(Recipe.find_by(id: button value))
+
+  end
+
   def delete
 
   end

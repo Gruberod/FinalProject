@@ -1,4 +1,3 @@
-
 Recipe.create( name: "Spaghetti And Meatballs All'Amatriciana", description: "Preparation
 MEATBALLS
 Place bacon in processor. Using on/off turns, grind to coarse paste. Transfer to large bowl. Using garlic press, squeeze in garlic. Gently mix in beef and all remaining ingredients. Let stand 15 minutes.
@@ -31,8 +30,6 @@ Ingredient.create(name: "extra-virgin olive oil")
 Ingredient.create(name: "dry white wine")
 Ingredient.create(name: "spaghetti")
 
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'smoken bacon').id, amount: "6 ounces")
-
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'smoked bacon').id, amount: "6 ounces")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'garlic cloves').id, amount: "2")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'ground beef').id, amount: "2 pounds")
@@ -50,7 +47,7 @@ RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'g
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'smoked bacon').id, amount: "6 ounces")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'extra-virgin olive oil').id, amount: "1 tablespoon")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'onion').id, amount: "3 cups")
-RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'red pepper crushed').id, amount: "extra-virgin olive oil")
+RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'red pepper crushed').id, amount: "1 1/2 teaspoons")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'dry white wine').id, amount: "2 cups")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'fresh marjoram').id, amount: "1 tablespoon")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'spaghetti').id, amount: "1 1/2 pounds")
@@ -58,27 +55,6 @@ RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'e
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'fresh marjoram').id, amount: "1 1/2 tablespoons")
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'Parmesan cheese').id, amount: "pinch")
 
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 1, amount: "6 ounces")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 2, amount: "2")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 3, amount: "2 pounds")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 4, amount: "2/3 cup")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 5, amount: "2/3 cup")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 6, amount: "2")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 7, amount: "1/2 cup")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 8, amount: "1/2 cup")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 9, amount: "2 tablespoons")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 10, amount: "1/2 tablespoon")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 11, amount: "1/2 tablespoon")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 12, amount: "2 cans")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 2, amount: "2")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 1, amount: "6 ounces")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 13, amount: "1 tablespoon")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 4, amount: "3 cups")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 9, amount: "1 1/2 teaspoons")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 14, amount: "2 cups")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 9, amount: "1 1/2 teaspoons")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 9, amount: "1 1/2 teaspoons")
-# RecipeIngredient.create(recipe_id: 1, ingredient_id: 9, amount: "1 1/2 teaspoons")
 
 Recipe.create( name: "Classic Garlic Bread", description: "Instructions
 Preheat oven to 450°. Heat butter and oil in a small saucepan over medium heat. Add garlic and parsley and cook, stirring occasionally, until butter is completely melted.
@@ -109,7 +85,6 @@ Bake cookies, rotating sheets halfway through, until just golden brown around th
 Do Ahead: Cookies can be made 1 day ahead. Store airtight at room temperature.
 ", avatar: File.new("#{Rails.root}/app/assets/images/cookies.jpg"))
 
-
 # Cookies
 Ingredient.create(name: "all-purpouse flour")
 Ingredient.create(name: "baking powder")
@@ -124,7 +99,6 @@ Ingredient.create(name: "egg yolks")
 Ingredient.create(name: "vanilla extract")
 Ingredient.create(name: "bittersweet chocolate")
 Ingredient.create(name: "flaky sea salt")
-
 
 RecipeIngredient.create(recipe_id: 3, ingredient_id: Ingredient.find_by(name: 'all-purpouse flour').id, amount: "1 1/2 cups")
 RecipeIngredient.create(recipe_id: 3, ingredient_id: Ingredient.find_by(name: 'baking powder').id, amount: "1 teaspoon")
@@ -181,7 +155,6 @@ Caesars crowned with a mound of grated Parmesan may look impressive, but all tha
 The Assembly
 Skip the tongs. Use your hands to gently toss the lettuce, croutons, and dressing, then top off with the shaved Parm.
 ", avatar: File.new("#{Rails.root}/app/assets/images/caesar.jpg"))
-
 
 # Caesar
 Ingredient.create(name: "anchovy fillets packed in oil")
@@ -305,6 +278,7 @@ RecipeIngredient.create(recipe_id: 8, ingredient_id: Ingredient.find_by(name: 'u
 RecipeIngredient.create(recipe_id: 8, ingredient_id: Ingredient.find_by(name: 'vegetable oil').id, amount: "for griddle")
 RecipeIngredient.create(recipe_id: 8, ingredient_id: Ingredient.find_by(name: 'maple syrup').id, amount: "for serving")
 
+
 Recipe.create( name: "Macaroni And Cheese", description: "Preparation
 Preheat oven to 350°. Melt 2 Tbsp. butter in a medium skillet over medium heat. Add panko and cook, stirring, until crumbs are golden brown, 6–8 minutes (make sure to get them toasty brown; they won’t darken much during baking). Transfer to a small bowl and toss with Parmesan, thyme leaves, and ¼ tsp. salt.
 Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente (the noodles will continue to cook in the cheese sauce, so take them out a minute or two before you think they’re actually done). Drain pasta; let cool while you make the sauce.
@@ -312,7 +286,6 @@ Bring milk to a bare simmer in a small saucepan; keep warm. Melt remaining 2 Tbs
 Bring béchamel sauce to a boil, then reduce heat and simmer, stirring, until sauce is thickened and doesn’t feel grainy when a little bit is rubbed between your fingers, 6–8 minutes (cooking the flour thoroughly at this stage ensures a creamy sauce). Add Fontina, Gruyère, cheddar, mustard powder, cayenne, and ¾ tsp. salt and stir until cheeses are melted and sauce is smooth. Remove from heat and mix in pasta; transfer to a 2-qt. baking dish.
 Bake 10 minutes. Top with Parmesan breadcrumbs and bake until sauce is bubbling around the edges, 8–10 minutes longer. Let cool in pan 15 minutes before serving.
 ", avatar: File.new("#{Rails.root}/app/assets/images/mac_and_cheese.jpg"))
-
 
 # Mac and cheese
 # unsalted butter
@@ -353,7 +326,6 @@ Combine salt, peppercorns, carrots, celery, onions, bay leaves, thyme sprigs, pa
 Let pressure release naturally. Remove lid and transfer chicken to a platter to cool. Strain broth into a large bowl. Remove carrots and let cool completely; discard other solids from strainer. Slice carrots into rounds. Remove skin from chicken and shred meat from the bones. Discard skin and bones.
 Return broth to the pot. Press Warm; set timer for 20 minutes (add or subtract time as needed) and press Start. Bring to a boil; add shredded chicken, carrot rounds, and noodles and cook until noodles are al dente, about 10 minutes, depending on thickness of noodles. Press Cancel to stop cooking. Ladle soup into bowls and garnish with chopped parsley.
 ", avatar: File.new("#{Rails.root}/app/assets/images/chicken_soup.jpg"))
-
 
 # Chicken soup
 # salt
@@ -436,6 +408,7 @@ RecipeIngredient.create(recipe_id: 11, ingredient_id: Ingredient.find_by(name: '
 # Do Ahead: Lasagna can be assembled 12 hours ahead. Cover and chill. Let sit at room temperature 2 hours before baking. Cook, covered with foil until the last 20 minutes, then finish cooking uncovered.
 # ", avatar: File.new("#{Rails.root}/app/assets/images/lasagna.jpg"))
 
+# Lasagna
 
 Recipe.create( name: "Classic French Toast", description: "Preparation
 Preheat oven to 250°. Lightly beat eggs, cream, milk, sugar, and salt in a large shallow baking dish (a lasagna pan is perfect). Add bread, turn to coat, then press down gently on bread until you feel it start to soak up custard mixture—this is key for a luscious, not dry, texture. Let soak, 10 minutes.
@@ -472,7 +445,6 @@ Arrange a rack in upper third of oven; preheat to 500°. Set a wire rack in a la
 Roast chicken, brushing with butter after 15 minutes, until skin is light golden brown and taut, about 30 minutes. Reduce oven temperature to 350°. Remove chicken from oven and brush with more butter. Let rest for 15–20 minutes.
 Return chicken to oven; roast, basting with butter every 10 minutes, until skin is golden brown and a thermometer inserted into the thickest part of the thigh registers 165°, 40–45 minutes. Let rest for 20 minutes. Carve and serve with pan juices.
 ", avatar: File.new("#{Rails.root}/app/assets/images/roast_chicken.jpg"))
-
 
 # Roast chicken
 # salt
@@ -529,7 +501,6 @@ Serve soup topped with butter and rosemary croutons.
 Do Ahead: Tomato soup and croutons can be made 4 days ahead. Let soup cool; cover and chill. Store croutons airtight at room temperature.
 ", avatar: File.new("#{Rails.root}/app/assets/images/tomato_soup.jpg"))
 
-
 # Tomato soup
 Ingredient.create(name: "can whole peeled tomatoes")
 # garlic
@@ -561,7 +532,6 @@ Reduce speed to low, add flour mixture, and mix until just combined. Add bananas
 Bake bread until a tester inserted into the center comes out clean, 60–65 minutes. Transfer pan to a wire rack and let bread cool in pan 1 hour. Turn out bread and let cool completely (if you can resist) before slicing.
 ", avatar: File.new("#{Rails.root}/app/assets/images/banana_bread.jpg"))
 
-
 # Banana bread
 # Nonstick vegetable oil spray
 # flour
@@ -574,7 +544,6 @@ Ingredient.create(name: "mascarpone, plain whole-milk Greek yogurt, or sour crea
 Ingredient.create(name: "very ripe bananas")
 # bittersweet chocolate
 Ingredient.create(name: "chopped walnuts (optional)")
-
 
 RecipeIngredient.create(recipe_id: 16, ingredient_id: Ingredient.find_by(name: 'nonstick vegetable oil spray').id, amount: "")
 RecipeIngredient.create(recipe_id: 16, ingredient_id: Ingredient.find_by(name: 'all-purpouse flour').id, amount: "1 1/2 cups")
@@ -643,6 +612,3 @@ RecipeIngredient.create(recipe_id: 18, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 18, ingredient_id: Ingredient.find_by(name: 'flat-leaf parsley').id, amount: "2 tablespoons")
 RecipeIngredient.create(recipe_id: 18, ingredient_id: Ingredient.find_by(name: 'salt').id, amount: "")
 RecipeIngredient.create(recipe_id: 18, ingredient_id: Ingredient.find_by(name: 'black pepper').id, amount: "")
-
-
-# Lasagna

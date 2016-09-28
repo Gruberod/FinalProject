@@ -22,6 +22,8 @@ class RecipesController < ApplicationController
   end
 
   def add_to_plan
-
+    @my_recipe = Recipe.find(params[:id])
+    @myPlan = Plan.new
+    @myPlan << @my_recipe
   end
 end

@@ -1,6 +1,30 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.top_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo_bar {
+  display: flex;
+  color: white;
+  font-style: italic;
+  font-size: 25px;
+  background-color: #d64862;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_bar {
+  height: 50px;
+  background-color: #e0c0c6;
+}
+
 img {
   width: 300px;
+}
+.recipe-ingredients {
+  display: flex;
 }
