@@ -11,15 +11,11 @@ class RecipesController < ApplicationController
   end
 
   def create
-
   end
 
   def edit
-
   end
 
   def delete
-
   end
-
 end

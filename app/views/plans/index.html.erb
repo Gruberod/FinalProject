@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="main_section">
+    <table>
+      <tr>
+        <th>Plans</th>
+      </tr>
+      <% @plans.each do |plan| %>
+        <tr>
+          <td><a href="/plans/<%= plan.id %>" ><%= plan.name %></a></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

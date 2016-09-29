@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="main_section">
+    <h3><%= @my_plan.name %></h3>
+    <div class="plan_recipes">
+      <% @my_plan.recipes.each do |recipe| %>
+        <p>
+          <%= recipe.name %>
+          <!-- <% recipe.ingredients.each do |ingredient| %>
+            <p>
+              <%= ingredient.name %>
+            </p>
+          <% end %> -->
+        </p>
+      <% end %>
+    </div>
+    <div>
+
+    </div>
+</div>
+</div>
