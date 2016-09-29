@@ -2,19 +2,20 @@
   <div class="logo_bar">Click 'n' Eat</div>
   <div class="top_bar"></div>
 </div>
-
-<div class="main_section">
-  <table>
-    <tr>
-      <th>Recipes</th>
-    </tr>
-    <% @recipes.each do |recipe| %>
+<div class="wrapper">
+  <div class="main_section">
+    <table>
       <tr>
-        <td><a href="/recipes/<%= recipe.id %>" ><%= recipe.name %></a></td>
-        <td><img src=<%= recipe.avatar.url %> alt=""></td>
+        <th>Recipes</th>
       </tr>
-    <% end %>
-  </table>
+      <% @recipes.each do |recipe| %>
+        <tr>
+          <td><a href="/recipes/<%= recipe.id %>" ><%= recipe.name %></a></td>
+          <td><img src=<%= recipe.avatar.url %> alt=""></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
 </div>
 
 <div class="footer">

@@ -1,6 +1,16 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// body {
+//   background-image:  image-url("background.jpg");
+//   background-position: 0 0;
+//   background-size: contain;
+// }
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .top_section {
   display: flex;
   flex-direction: column;
@@ -20,6 +30,11 @@
 .top_bar {
   height: 50px;
   background-color: #e0c0c6;
+}
+
+.main_section {
+  width: 60%;
+  background-color: white;
 }
 
 img {

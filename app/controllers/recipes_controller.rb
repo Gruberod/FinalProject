@@ -4,6 +4,7 @@ class RecipesController < ApplicationController
   end
 
   def show
+    @plan = Plan.new
     @my_recipe = Recipe.find(params[:id])
     @my_recipe_ingredients = Recipe.find(params[:id]).ingredients
     @ingredient_amount = Recipe.find(params[:id]).recipe_ingredients
@@ -21,9 +22,4 @@ class RecipesController < ApplicationController
 
   end
 
-  def add_to_plan
-    @my_recipe = Recipe.find(params[:id])
-    @myPlan = Plan.new
-    @myPlan << @my_recipe
-  end
 end

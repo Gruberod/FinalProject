@@ -1,3 +1,6 @@
+User.create(name: "Daniela", password: "1234")
+
+
 Recipe.create( name: "Spaghetti And Meatballs All'Amatriciana", description: "Preparation
 MEATBALLS
 Place bacon in processor. Using on/off turns, grind to coarse paste. Transfer to large bowl. Using garlic press, squeeze in garlic. Gently mix in beef and all remaining ingredients. Let stand 15 minutes.

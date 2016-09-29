@@ -1,12 +1,13 @@
 class SessionsController < ApplicationController
   def new
+
   end
 
   def create
-    user = User.find_by(name: params[:params])
+    user = User.find_by(name: params[:name])
     if user && user.authenticate(params[:password])
-      session[user_id] = user.id
-      redirect_to '/'
+      session[:user_id] = user.id
+      redirect_to '/recipes'
     else
       redirect_to '/users/login'
     end
