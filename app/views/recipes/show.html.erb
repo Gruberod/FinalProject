@@ -1,30 +1,37 @@
-<div class="wrapper">
-  <div class="main_section">
+<div class="main">
+  <div class="wrapper">
+    <div>
       <h3><%= @my_recipe.name %></h3>
-    <img src=<%= @my_recipe.avatar.url %> alt="">
-    <div class="recipe-ingredients">
-      <div class="ingredients-amount">
-        <% @ingredient_amount.each do |amount| %>
-          <p>
-            <%= amount.amount %>
-          </p>
-        <% end %>
-      </div>
+    </div>
+    <div>
+      <img src=<%= @my_recipe.avatar.url %> alt="">
+    </div>
+    <div>
+      <h3>Ingredients</h3>
+      <div class="recipe-ingredients">
+        <div class="ingredients-amount">
+          <% @ingredient_amount.each do |amount| %>
+            <p>
+              <%= amount.amount %>
+            </p>
+          <% end %>
+        </div>
 
-      <div class="ingredients">
-        <% @my_recipe_ingredients.each do |recipe_ingredient| %>
-          <p>
-            <%= recipe_ingredient.name %>
-          </p>
-        <% end %>
+        <div class="ingredients">
+          <% @my_recipe_ingredients.each do |recipe_ingredient| %>
+            <p>
+              <%= recipe_ingredient.name %>
+            </p>
+          <% end %>
+        </div>
       </div>
     </div>
-
-    <div>
+    <div class="preparation">
+      <h3>Preparation</h3>
       <p><%= @my_recipe.description %></p>
     </div>
 
-    <div>
+    <div class="add-to-plan">
       <%= form_tag recipe_plans_path do %>
         <%= hidden_field_tag :recipe_id, @my_recipe.id %>
         <%= select_tag :plan_id, options_from_collection_for_select(current_user.plans, "id", "name") %>
@@ -32,13 +39,12 @@
         <%= submit_tag "Add this recipe to a plan!" %>
       <% end %>
     </div>
-    <div>
+    <div class="create-plan">
       <%= form_for @plan do |f| %>
         <%= f.hidden_field :recipe_id, value: @my_recipe.id %>
         <%= f.text_field :name %>
         <%= f.submit "Create a new plan a add recipe!" %>
       <% end %>
-
     </div>
   </div>
 </div>

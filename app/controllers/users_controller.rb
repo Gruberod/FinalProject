@@ -5,9 +5,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-        redirect_to "/recipes", alert: "User created successfully."
+      session[:user_id] = @user.id
+      redirect_to "/recipes", alert: "User created successfully."
     else
-        redirect_to "/", alert: "Error creating user."
+      redirect_to "/", alert: "Error creating user."
     end
   end
 

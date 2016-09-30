@@ -13,18 +13,36 @@
   background-size: cover;
   background-repeat: repeat-y;
   height: 100%;
+  overflow: auto;
 }
 
 .wrapper {
   width: 60%;
   background-color: white;
-  height: 100%;
+  overflow: auto;
 }
 
 img {
   width: 300px;
 }
 
+
 .recipe-ingredients {
   display: flex;
 }
+
+.recipe-ingredients p {
+  margin: 0.1px;
+}
+
+.ingredients {
+  margin-left: 10px;
+}
+
+.preparation {
+  margin: 10px;
+}
+ .add-to-plan, .create-plan {
+   margin: 10px;
+   align-self: flex-start;
+ }
