@@ -1,7 +1,17 @@
-<h3>New user</h3>
-<%= form_tag '/users/new' do %>
-  Name: <%= text_field_tag :name %>
-  Password: <%= password_field_tag :password %>
-  Password Confirmation: <%= password_field_tag :password_confirmation %>
-  <%= submit_tag "Submit" %>
-<% end %>
+<div class="main">
+  <div class="wrapper">
+    <div>
+      <h1>New user</h1>
+    </div>
+    <div>
+      <div class="form">
+        <%= form_tag '/users/new' do %>
+          <div class="form-input">Name: <%= text_field_tag :name %></div>
+          <div class="form-input">Password: <%= password_field_tag :password %></div>
+          <div class="form-input">Password Confirmation: <%= password_field_tag :password_confirmation %></div>
+          <div class="form-input"><%= submit_tag "Submit" %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

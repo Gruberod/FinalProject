@@ -1,3 +1,16 @@
-<%= link_to "New user", "/users/new" %><br>
-<%= link_to "Log in", "/users/login" %><br>
-<%= link_to "Log out", "/users/logout", :method => :delete %>
+<div class="main">
+  <div class="wrapper">
+    <div class="greeting">
+      WELCOME
+    </div>
+    <div class="menu">
+      <%= link_to "New user", "/users/new" %>
+    </div>
+    <div class="menu">
+      <%= link_to "Log in", "/users/login" %>
+    </div>
+    <div class="menu">
+      <%= link_to "Log out", "/users/logout", :method => :delete %>
+    </div>
+  </div>
+</div>

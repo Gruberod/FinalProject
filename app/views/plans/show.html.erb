@@ -12,6 +12,9 @@
           <% end %> -->
         </p>
       <% end %>
+      <%= link_to "Generate ShoppingList", "/shopping_lists", :controller => "shopping_lists",
+            :action => "create",
+            :plan_id => @my_plan.id %>
     </div>
     <div>
 

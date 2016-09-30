@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="main_section">
+    <table>
+      <tr>
+        <th>Shopping List</th>
+      </tr>
+      <% @recipes.each do |recipe| %>
+        <% recipe.ingredients.each do |ingredient| %>
+          <td><%= ingredient.name %></td>
+        <% end %>
+      <% end %>
+    </table>
+  </div>
+</div>

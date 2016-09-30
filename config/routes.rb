@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post 'recipes/:id' => 'recipe_plans#create', as: 'recipe_plans'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :recipes
-  resources :plans, only: [:index, :show, :create, :edit, :update, :delete] do
-  end
+  resources :shopping_lists, only: [:index, :create, :edit, :delete] 
+  resources :plans, only: [:index, :show, :create, :edit, :update, :delete]
   get "/", to: 'home#index'
 end

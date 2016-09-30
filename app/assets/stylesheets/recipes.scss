@@ -6,40 +6,25 @@
 //   background-position: 0 0;
 //   background-size: contain;
 // }
+.main {
+  display: flex;
+  justify-content: center;
+  background-image: url(/assets/background.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100%;
+}
+
 .wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.top_section {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo_bar {
-  display: flex;
-  color: white;
-  font-style: italic;
-  font-size: 25px;
-  background-color: #d64862;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-}
-
-.top_bar {
-  height: 50px;
-  background-color: #e0c0c6;
-}
-
-.main_section {
   width: 60%;
   background-color: white;
+  height: 100%;
 }
 
 img {
   width: 300px;
 }
+
 .recipe-ingredients {
   display: flex;
 }
