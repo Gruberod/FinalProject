@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="wrapper">
+    <div>
+      <h1>Login</h1>
+    </div>
+    <div class="form">
+      <div class="form-input">
+        <%= form_tag '/users/login' do %>
+      </div>
+      <div class="form-input">  Name: <%= text_field_tag :name %></div>
+      <div class="form-input">  Password: <%= password_field_tag :password %></div>
+      <div class="form-input"><%= submit_tag "Submit" %></div>
+      <% end %>
+    </div>
+  </div>
+</div>

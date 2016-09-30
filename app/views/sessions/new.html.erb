@@ -4,10 +4,12 @@
       <h1>Login</h1>
     </div>
     <div class="form">
-      <div class="form-input"><%= form_tag '/users/login' do %></div>
-      <div class="form-input">  Name: <%= text_field_tag :name %></div>
-      <div class="form-input">  Password: <%= password_field_tag :password %></div>
-      <div class="form-input">  <%= submit_tag "Submit" %></div>
+      <%= form_tag '/users/login', :class => 'form-input' do %>
+        <label class="ddsa">Name: </label>
+        <%= text_field_tag :name, nil, class: 'special_input'%>
+        <label>Password: </label>
+        <%= password_field_tag :password %>
+        <%= submit_tag "Submit" %>
       <% end %>
     </div>
   </div>
