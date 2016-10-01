@@ -1,11 +1,10 @@
 User.create(name: "Daniela", password: "1234")
 
 
-Recipe.create( name: "Spaghetti And Meatballs All'Amatriciana", description: "Preparation
-MEATBALLS
+Recipe.create( name: "Spaghetti And Meatballs All'Amatriciana", description: "MEATBALLS
 Place bacon in processor. Using on/off turns, grind to coarse paste. Transfer to large bowl. Using garlic press, squeeze in garlic. Gently mix in beef and all remaining ingredients. Let stand 15 minutes.
 Line large rimmed baking sheet with plastic wrap. Using moistened hands and scant 2 tablespoonfuls for each, roll meat mixture into 1 1/2-inch meatballs. Arrange meatballs on sheet. DO AHEAD Can be made 1 day ahead. Cover with plastic wrap; chill.
-Sauce
+SAUCE
 Puree tomatoes with juice and garlic in batches in blender until smooth.
 Cook bacon in large pot over medium heat until crisp; transfer bacon to plate.
 Add 1 tablespoon oil to drippings in pot and heat over medium heat. Add half of meatballs. Cook until brown on all sides, turning carefully with small metal spatula, about 9 minutes. Transfer meatballs to baking sheet. Add more oil to pot if needed and repeat with remaining meatballs.
@@ -59,8 +58,7 @@ RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'f
 RecipeIngredient.create(recipe_id: 1, ingredient_id: Ingredient.find_by(name: 'Parmesan cheese').id, amount: "pinch")
 
 
-Recipe.create( name: "Classic Garlic Bread", description: "Instructions
-Preheat oven to 450°. Heat butter and oil in a small saucepan over medium heat. Add garlic and parsley and cook, stirring occasionally, until butter is completely melted.
+Recipe.create( name: "Classic Garlic Bread", description: "Preheat oven to 450°. Heat butter and oil in a small saucepan over medium heat. Add garlic and parsley and cook, stirring occasionally, until butter is completely melted.
 Slice bread in half lengthwise, then place on a baking sheet and brush cut sides with butter mixture.
 Slice crosswise 1 thick, without cutting all the way through; season with salt and top with Parmesan. Bake until golden, 10–15 minutes.
 ", avatar: File.new("#{Rails.root}/app/assets/images/garlic_bread.jpg"))
@@ -80,8 +78,7 @@ RecipeIngredient.create(recipe_id: 2, ingredient_id: Ingredient.find_by(name: 's
 RecipeIngredient.create(recipe_id: 2, ingredient_id: Ingredient.find_by(name: 'Parmesan cheese').id, amount: "")
 
 
-Recipe.create( name: "Salty Chocolate Chunk Cookies", description: "Preparation
-Place racks in upper and lower thirds of oven and preheat to 375°. Whisk flour, baking powder, kosher salt, and baking soda in a medium bowl; set aside.
+Recipe.create( name: "Salty Chocolate Chunk Cookies", description: "Place racks in upper and lower thirds of oven and preheat to 375°. Whisk flour, baking powder, kosher salt, and baking soda in a medium bowl; set aside.
 Using an electric mixer on medium speed, beat butter, brown sugar, sugar, and powdered sugar until light and fluffy, 3-4 minutes. Add egg yolks, egg, and vanilla. Beat, occasionally scraping down the sides of the bowl, until mixture is pale and fluffy, 4-5 minutes. Reduce mixer speed to low; slowly add dry ingredients, mixing just to blend. Using a spatula, fold in chocolate.
 Spoon rounded tablespoonfuls of cookie dough onto 2 parchment paper-lined baking sheets, spacing 1-inch apart. Sprinkle cookies with sea salt.
 Bake cookies, rotating sheets halfway through, until just golden brown around the edges, 10-12 minutes (the cookies will firm up as they cool). Let cool slightly on baking sheets, then transfer to wire racks; let cool completely.
@@ -145,8 +142,7 @@ RecipeIngredient.create(recipe_id: 4, ingredient_id: Ingredient.find_by(name: 's
 RecipeIngredient.create(recipe_id: 4, ingredient_id: Ingredient.find_by(name: 'black pepper').id, amount: "")
 
 
-Recipe.create( name: "Classic Caesar Salad", description: "Preparation
-The Dressing
+Recipe.create( name: "Classic Caesar Salad", description: "The Dressing
 Chop together anchovy fillets, garlic, and pinch of salt. Use the side of a knife blade to mash into a paste, then scrape into a medium bowl. Whisk in egg yolks, 2 Tbsp. lemon juice, and mustard. Adding drop by drop to start, gradually whisk in olive oil, then vegetable oil; whisk until dressing is thick and glossy. Whisk in Parmesan. Season with salt, pepper, and more lemon juice, if desired.
 Do Ahead: Can be made 1 day ahead.
 The Croutons
@@ -190,8 +186,7 @@ RecipeIngredient.create(recipe_id: 5, ingredient_id: Ingredient.find_by(name: 'o
 RecipeIngredient.create(recipe_id: 5, ingredient_id: Ingredient.find_by(name: 'romaine heart(salad)').id, amount: "3")
 
 
-Recipe.create( name: "Skillet-Fried Chicken", description: "Preparation
-Whisk 1 Tbsp. salt, 2 tsp. black pepper, paprika, cayenne, garlic powder, and onion powder in a small bowl. Season chicken with spices. Place chicken in a medium bowl, cover, and chill overnight.
+Recipe.create( name: "Skillet-Fried Chicken", description: "Whisk 1 Tbsp. salt, 2 tsp. black pepper, paprika, cayenne, garlic powder, and onion powder in a small bowl. Season chicken with spices. Place chicken in a medium bowl, cover, and chill overnight.
 Let chicken stand covered at room temperature for 1 hour. Whisk buttermilk, egg, and 1/2 cup water in a medium bowl. Whisk flour, cornstarch, remaining 1 Tbsp. salt, and remaining 1 Tbsp. pepper in a 9x13x2 baking dish.
 Pour oil into a 10–12 cast-iron skillet or other heavy straight-sided skillet (not nonstick) to a depth of 3/4. Prop deep-fry thermometer in oil so bulb is submerged. Heat over medium-high heat until thermometer registers 350°. Meanwhile, set a wire rack inside a large rimmed baking sheet.
 Working with 1 piece at a time (use 1 hand for wet ingredients and the other for dry ingredients), dip chicken in buttermilk mixture, allowing excess to drip back into bowl. Dredge in flour mixture; tap against bowl to shake off excess. Place 5 pieces of chicken in skillet. Fry chicken, turning with tongs every 1–2 minutes and adjusting heat to maintain a steady temperature of 300°–325°, until skin is deep golden brown and an instant-read thermometer inserted into thickest part of chicken registers 165°, about 10 minutes for wings and 12 minutes for thighs, legs, and breasts.
@@ -227,8 +222,7 @@ RecipeIngredient.create(recipe_id: 6, ingredient_id: Ingredient.find_by(name: 'c
 RecipeIngredient.create(recipe_id: 6, ingredient_id: Ingredient.find_by(name: 'peanut oil').id, amount: "for frying")
 
 
-Recipe.create( name: "Cocoa Brownies", description: "Preparation
-Preheat oven to 325°. Line an 8x8x2 inches glass baking dish with foil, pressing firmly into pan and leaving a 2 inches overhang. Coat foil with nonstick spray; set baking dish aside.
+Recipe.create( name: "Cocoa Brownies", description: "Preheat oven to 325°. Line an 8x8x2 inches glass baking dish with foil, pressing firmly into pan and leaving a 2 inches overhang. Coat foil with nonstick spray; set baking dish aside.
 Melt butter in a small sauce-pan over medium heat. Let cool slightly. Whisk sugar, cocoa, and salt in a medium bowl to combine. Pour butter in a steady stream into dry ingredients, whisking constantly to blend. Whisk in vanilla. Add eggs one at a time, beating vigorously to blend after each addition. Add flour and stir until just combined (do not overmix). Scrape batter into prepared pan; smooth top.
 Bake until top begins to crack and a toothpick inserted into the center comes out with a few moist crumbs attached, 25-30 minutes.
 Transfer pan to a wire rack; let cool completely in pan. Using foil overhang, lift brownie out of pan; transfer to a cutting board. Cut into 16 squares.
@@ -254,8 +248,7 @@ RecipeIngredient.create(recipe_id: 7, ingredient_id: Ingredient.find_by(name: 'e
 RecipeIngredient.create(recipe_id: 7, ingredient_id: Ingredient.find_by(name: 'all-purpouse flour').id, amount: "1/3 cup")
 
 
-Recipe.create( name: "BA’s Best Buttermilk Pancakes", description: "Preparation
-Whisk flour, sugar, baking powder, baking soda, and salt in a large bowl. Whisk eggs, buttermilk, and butter in a medium bowl; stir into dry ingredients until just combined (some lumps are okay).
+Recipe.create( name: "BA’s Best Buttermilk Pancakes", description: "Whisk flour, sugar, baking powder, baking soda, and salt in a large bowl. Whisk eggs, buttermilk, and butter in a medium bowl; stir into dry ingredients until just combined (some lumps are okay).
 Heat a griddle or large skillet over medium; brush with oil. Working in batches, scoop ⅓-cupfuls of batter onto griddle. Cook pancakes until bottoms are golden brown and bubbles form on top, about 3 minutes. Flip and cook until cooked through and other side of pancakes are golden brown, about 2 minutes longer. Serve pancakes with maple syrup.
 ", avatar: File.new("#{Rails.root}/app/assets/images/pancakes.jpg"))
 
@@ -282,8 +275,7 @@ RecipeIngredient.create(recipe_id: 8, ingredient_id: Ingredient.find_by(name: 'v
 RecipeIngredient.create(recipe_id: 8, ingredient_id: Ingredient.find_by(name: 'maple syrup').id, amount: "for serving")
 
 
-Recipe.create( name: "Macaroni And Cheese", description: "Preparation
-Preheat oven to 350°. Melt 2 Tbsp. butter in a medium skillet over medium heat. Add panko and cook, stirring, until crumbs are golden brown, 6–8 minutes (make sure to get them toasty brown; they won’t darken much during baking). Transfer to a small bowl and toss with Parmesan, thyme leaves, and ¼ tsp. salt.
+Recipe.create( name: "Macaroni And Cheese", description: "Preheat oven to 350°. Melt 2 Tbsp. butter in a medium skillet over medium heat. Add panko and cook, stirring, until crumbs are golden brown, 6–8 minutes (make sure to get them toasty brown; they won’t darken much during baking). Transfer to a small bowl and toss with Parmesan, thyme leaves, and ¼ tsp. salt.
 Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente (the noodles will continue to cook in the cheese sauce, so take them out a minute or two before you think they’re actually done). Drain pasta; let cool while you make the sauce.
 Bring milk to a bare simmer in a small saucepan; keep warm. Melt remaining 2 Tbsp. butter in a medium saucepan over medium-high. Add onion and garlic and cook, stirring, until onions are fragrant and beginning to soften, about 2 minutes. Sprinkle flour over and cook, stirring constantly, until mixture starts to stick to bottom of saucepan, about 1 minute. Add warm milk in a few additions, whisking to combine after each addition.
 Bring béchamel sauce to a boil, then reduce heat and simmer, stirring, until sauce is thickened and doesn’t feel grainy when a little bit is rubbed between your fingers, 6–8 minutes (cooking the flour thoroughly at this stage ensures a creamy sauce). Add Fontina, Gruyère, cheddar, mustard powder, cayenne, and ¾ tsp. salt and stir until cheeses are melted and sauce is smooth. Remove from heat and mix in pasta; transfer to a 2-qt. baking dish.
@@ -324,8 +316,7 @@ RecipeIngredient.create(recipe_id: 9, ingredient_id: Ingredient.find_by(name: 'E
 RecipeIngredient.create(recipe_id: 9, ingredient_id: Ingredient.find_by(name: 'cayenne pepper').id, amount: "pinch")
 
 
-Recipe.create( name: "Chicken Noodle Soup", description: "Preparation
-Combine salt, peppercorns, carrots, celery, onions, bay leaves, thyme sprigs, parsley sprigs, and ginger in the pressure cooker pot. Place chicken on top; add broth and 3 cups water. (The liquid should not rise above the 2/3 marker.) Lock lid in place, making sure vent is sealed. Press Warm; set timer for 24 minutes and press Start to cook.
+Recipe.create( name: "Chicken Noodle Soup", description: "Combine salt, peppercorns, carrots, celery, onions, bay leaves, thyme sprigs, parsley sprigs, and ginger in the pressure cooker pot. Place chicken on top; add broth and 3 cups water. (The liquid should not rise above the 2/3 marker.) Lock lid in place, making sure vent is sealed. Press Warm; set timer for 24 minutes and press Start to cook.
 Let pressure release naturally. Remove lid and transfer chicken to a platter to cool. Strain broth into a large bowl. Remove carrots and let cool completely; discard other solids from strainer. Slice carrots into rounds. Remove skin from chicken and shred meat from the bones. Discard skin and bones.
 Return broth to the pot. Press Warm; set timer for 20 minutes (add or subtract time as needed) and press Start. Bring to a boil; add shredded chicken, carrot rounds, and noodles and cook until noodles are al dente, about 10 minutes, depending on thickness of noodles. Press Cancel to stop cooking. Ladle soup into bowls and garnish with chopped parsley.
 ", avatar: File.new("#{Rails.root}/app/assets/images/chicken_soup.jpg"))
@@ -360,8 +351,7 @@ RecipeIngredient.create(recipe_id: 10, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 10, ingredient_id: Ingredient.find_by(name: 'flat-leaf parsley').id, amount: "3 tablespoons")
 
 
-Recipe.create( name: "German Potato Salad With Dill", description: "Preparation
-Cover potatoes with cold salted water, bring to a boil, and cook until tender; drain and transfer to a large bowl.
+Recipe.create( name: "German Potato Salad With Dill", description: "Cover potatoes with cold salted water, bring to a boil, and cook until tender; drain and transfer to a large bowl.
 Meanwhile, heat oil in a medium skillet over medium-high heat. Add onion; season with salt and pepper. Cook, stirring often, until soft, about 5 minutes.
 Remove from heat and mix in vinegar. Add to potatoes along with scallions, dill, and caraway seeds and toss, crushing potatoes slightly; season with salt and pepper.
 ", avatar: File.new("#{Rails.root}/app/assets/images/potato_salad.jpg"))
@@ -386,8 +376,7 @@ RecipeIngredient.create(recipe_id: 11, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 11, ingredient_id: Ingredient.find_by(name: 'fresh dill').id, amount: "2 tablespoons")
 RecipeIngredient.create(recipe_id: 11, ingredient_id: Ingredient.find_by(name: 'caraway seeds').id, amount: "1 teaspoon")
 
-# recipe13 = Recipe.create( name: "Lasagna Bolognese", description: "Preparation
-# Special Equipment:
+# recipe13 = Recipe.create( name: "Lasagna Bolognese", description: "# Special Equipment:
 # A pasta maker
 # Bolognese Sauce
 # Pulse onion, carrot, and celery in a food processor until finely chopped.
@@ -413,8 +402,7 @@ RecipeIngredient.create(recipe_id: 11, ingredient_id: Ingredient.find_by(name: '
 
 # Lasagna
 
-Recipe.create( name: "Classic French Toast", description: "Preparation
-Preheat oven to 250°. Lightly beat eggs, cream, milk, sugar, and salt in a large shallow baking dish (a lasagna pan is perfect). Add bread, turn to coat, then press down gently on bread until you feel it start to soak up custard mixture—this is key for a luscious, not dry, texture. Let soak, 10 minutes.
+Recipe.create( name: "Classic French Toast", description: "Preheat oven to 250°. Lightly beat eggs, cream, milk, sugar, and salt in a large shallow baking dish (a lasagna pan is perfect). Add bread, turn to coat, then press down gently on bread until you feel it start to soak up custard mixture—this is key for a luscious, not dry, texture. Let soak, 10 minutes.
 Flip bread and soak on second side, pressing down gently from time to time, until bread is saturated but not soggy, another 10 minutes or so.
 Heat 1 Tbsp. butter and 1 Tbsp. oil in a large skillet over medium heat. When foaming subsides, carefully lift 3 slices of bread from custard, letting excess drip back into dish, and cook in skillet until golden brown and center of toast springs back when pressed, about 2 minutes per side. Transfer toast to a wire rack set inside a rimmed baking sheet and keep warm in oven while you cook remaining slices of bread with 1 Tbsp. butter and remaining 1 Tbsp. oil.
 Serve French toast with butter, maple syrup, jam, and/or powdered sugar.
@@ -442,8 +430,7 @@ RecipeIngredient.create(recipe_id: 12, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 12, ingredient_id: Ingredient.find_by(name: 'maple syrup').id, amount: "for serving")
 
 
-Recipe.create( name: "Roast Chicken", description: "Preparation
-Rub or pat salt onto breast, legs, and thighs of chicken. Place chicken in a large resealable plastic bag. Set open bag in a large bowl, keeping chicken breast side up. Chill for at least 8 hours and up to 2 days.
+Recipe.create( name: "Roast Chicken", description: "Rub or pat salt onto breast, legs, and thighs of chicken. Place chicken in a large resealable plastic bag. Set open bag in a large bowl, keeping chicken breast side up. Chill for at least 8 hours and up to 2 days.
 Arrange a rack in upper third of oven; preheat to 500°. Set a wire rack in a large heavy roasting pan. Remove chicken from bag. Pat dry with paper towels (do not rinse). Place chicken, breast side up, on prepared rack. Loosely tie legs together with kitchen twine and tuck wing tips under. Brush chicken all over with some of the butter. Pour 1 cup water into pan.
 Roast chicken, brushing with butter after 15 minutes, until skin is light golden brown and taut, about 30 minutes. Reduce oven temperature to 350°. Remove chicken from oven and brush with more butter. Let rest for 15–20 minutes.
 Return chicken to oven; roast, basting with butter every 10 minutes, until skin is golden brown and a thermometer inserted into the thickest part of the thigh registers 165°, 40–45 minutes. Let rest for 20 minutes. Carve and serve with pan juices.
@@ -459,8 +446,7 @@ RecipeIngredient.create(recipe_id: 13, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 13, ingredient_id: Ingredient.find_by(name: 'unsalted butter').id, amount: "1/4 cup")
 
 
-Recipe.create( name: "Shrimp Fried Rice", description: "Preparation
-Heat 1 Tbsp. vegetable oil in a large nonstick skillet over medium-high heat. Season shrimp with salt and cook, turning once, until just opaque in the center, about 3 minutes; transfer to a plate.
+Recipe.create( name: "Shrimp Fried Rice", description: "Heat 1 Tbsp. vegetable oil in a large nonstick skillet over medium-high heat. Season shrimp with salt and cook, turning once, until just opaque in the center, about 3 minutes; transfer to a plate.
 Heat remaining 1 Tbsp. vegetable oil in same skillet; add scallion whites, garlic, and ginger. Cook, stirring, until fragrant, about 1 minute. Add rice and stir to coat. Cook until rice is crisp, about 2 minutes. Push rice to one side of skillet; add eggs to other side and cook, stirring and working into rice mixture, 1 to 2 minutes.
 Add edamame, peas, soy sauce, vinegar, sesame oil, and cooked shrimp. Cook, tossing constantly, until shrimp and vegetables are heated through, about 1 minute. Top with scallion greens.
 ", avatar: File.new("#{Rails.root}/app/assets/images/fried_rice.jpg"))
@@ -494,8 +480,7 @@ RecipeIngredient.create(recipe_id: 14, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 14, ingredient_id: Ingredient.find_by(name: 'sesame oil').id, amount: "1 teaspoon")
 
 
-Recipe.create( name: "Roasted Tomato Soup", description: "Preparation
-Preheat oven to 425°. Crush tomatoes with your hands into a 13x9 baking dish; scatter garlic over and drizzle with 1/4 cup oil; season with salt and pepper. Roast, tossing halfway through, until garlic is very soft and tomatoes are jammy, 35–40 minutes. Using a potato masher or fork, mash to break up garlic and tomatoes.
+Recipe.create( name: "Roasted Tomato Soup", description: "Preheat oven to 425°. Crush tomatoes with your hands into a 13x9 baking dish; scatter garlic over and drizzle with 1/4 cup oil; season with salt and pepper. Roast, tossing halfway through, until garlic is very soft and tomatoes are jammy, 35–40 minutes. Using a potato masher or fork, mash to break up garlic and tomatoes.
 Heat 2 Tbsp. oil in a large heavy pot over medium-high. Add onion and season with salt and pepper. Cook, stirring occasionally, until onion begins to soften, about 5 minutes. Reduce heat to medium-low, cover pot, and cook, checking and stirring occasionally, until onion is very soft, 25–30 minutes (this long, slow cooking draws out maximum flavor). Increase heat to medium-high, add tomato paste, and cook, stirring, until slightly darkened in color, about 2 minutes. Add roasted tomato mixture and broth and bring to a boil. Reduce heat and simmer, stirring occasionally, until flavors meld, 15–20 minutes. Let cool slightly.
 Meanwhile, strip leaves from rosemary sprig and toss with bread and remaining 2 Tbsp. oil on a clean rimmed baking sheet; season with salt and pepper. Toast, tossing once, until croutons are golden brown, 6–8 minutes.
 Working in batches, purée tomato mixture in a blender until very smooth (make sure lid is slightly ajar to let steam escape; cover with a towel). Transfer to a large bowl or pitcher.
@@ -528,8 +513,7 @@ RecipeIngredient.create(recipe_id: 15, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 15, ingredient_id: Ingredient.find_by(name: 'unsalted butter').id, amount: "2 tablespoons")
 
 
-Recipe.create( name: "Banana Bread", description: "Preparation
-Preheat oven to 350°. Lightly coat a 8 ½x4 ½ loaf pan with nonstick spray and line with parchment paper, leaving a generous overhang on long sides. Whisk flour, baking soda, and salt in a medium bowl.
+Recipe.create( name: "Banana Bread", description: "Preheat oven to 350°. Lightly coat a 8 ½x4 ½ loaf pan with nonstick spray and line with parchment paper, leaving a generous overhang on long sides. Whisk flour, baking soda, and salt in a medium bowl.
 Using an electric mixer on medium-high speed, beat brown sugar, mascarpone, and butter in a large bowl until light and fluffy, about 4 minutes. Add eggs one at a time, beating to blend after each addition and scraping down sides and bottom of bowl as needed.
 Reduce speed to low, add flour mixture, and mix until just combined. Add bananas and mix just until combined. Fold in chocolate and/or walnuts, if using. Scrape batter into prepared pan; smooth top.
 Bake bread until a tester inserted into the center comes out clean, 60–65 minutes. Transfer pan to a wire rack and let bread cool in pan 1 hour. Turn out bread and let cool completely (if you can resist) before slicing.
@@ -561,8 +545,7 @@ RecipeIngredient.create(recipe_id: 16, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 16, ingredient_id: Ingredient.find_by(name: 'chopped walnuts (optional)').id, amount: "1/2 cup")
 
 
-Recipe.create( name: "Extra-Buttery Mashed Potatoes", description: "Preparation
-Place potatoes in a large pot and pour in cold water to cover by 1”. Add salt and bring to a boil. Reduce heat and simmer until potatoes are very tender but not saturated or crumbly, 20–25 minutes (boiling will lead to waterlogged pieces).
+Recipe.create( name: "Extra-Buttery Mashed Potatoes", description: "Place potatoes in a large pot and pour in cold water to cover by 1”. Add salt and bring to a boil. Reduce heat and simmer until potatoes are very tender but not saturated or crumbly, 20–25 minutes (boiling will lead to waterlogged pieces).
 Drain potatoes, reserving ½ cup cooking liquid if making potatoes ahead. Return potatoes to pot and set over low heat. Gently stir until dry, about 1 minute.
 Meanwhile, heat milk, thyme sprigs, if desired, bay leaves, and ¾ cup butter in a small saucepan over medium heat until butter is melted. Remove from heat.
 Pass hot potatoes through a ricer into a large bowl (if allowed to cool, the potatoes will become gummy).
@@ -589,8 +572,7 @@ RecipeIngredient.create(recipe_id: 17, ingredient_id: Ingredient.find_by(name: '
 RecipeIngredient.create(recipe_id: 17, ingredient_id: Ingredient.find_by(name: 'black pepper').id, amount: "")
 
 
-Recipe.create( name: "Mussels With White Wine", description: "Preparation
-Heat oil in a large heavy pot over medium heat. Add shallots and garlic and cook, stirring occasionally, until softened not browned, about 5 minutes. Add wine and bring to a boil. Reduce heat and simmer until liquid is reduced by half, 3-4 minutes. Add mussels, cover, and cook, shaking pot occasionally, until shells open (discard any that do not open), 10–12 minutes. Using a slotted spoon, transfer mussels to shallow bowls.
+Recipe.create( name: "Mussels With White Wine", description: "Heat oil in a large heavy pot over medium heat. Add shallots and garlic and cook, stirring occasionally, until softened not browned, about 5 minutes. Add wine and bring to a boil. Reduce heat and simmer until liquid is reduced by half, 3-4 minutes. Add mussels, cover, and cook, shaking pot occasionally, until shells open (discard any that do not open), 10–12 minutes. Using a slotted spoon, transfer mussels to shallow bowls.
 Add butter to cooking liquid and stir until melted. Add 2 Tbsp. dill and 2 Tbsp. parsley; season with salt and pepper. Ladle cooking liquid over mussels and top with more herbs.
 ", avatar: File.new("#{Rails.root}/app/assets/images/moules.jpg"))
 

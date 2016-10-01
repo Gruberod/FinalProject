@@ -1,14 +1,16 @@
-<div class="wrapper">
-  <div class="main_section">
-    <table>
-      <tr>
-        <th>Plans</th>
-      </tr>
+<div class="main">
+  <div class="wrapper">
+    <div class="heading">
+      <h1>MyPlans</h1>
+    </div>
+    <div class="plans-section">
       <% @plans.each do |plan| %>
-        <tr>
-          <td><a href="/plans/<%= plan.id %>" ><%= plan.name %></a></td>
-        </tr>
+        <div class="plan-single">
+          <tr>
+            <td><a href="/plans/<%= plan.id %>" ><%= plan.name %></a></td>
+          </tr>
+        </div>
       <% end %>
-    </table>
+    </div>
   </div>
 </div>

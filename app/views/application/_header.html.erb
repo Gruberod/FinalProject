@@ -7,10 +7,10 @@
   </div>
   <% if current_user != nil %>
   <div class="top-bar">
-    <div>Recipes</div>
-    <div>MyPlans</div>
+    <div><%= link_to "Recipes", "/recipes"%></div>
+    <div><%= link_to "MyPlans", "/plans"%></div>
     <div>ShoppingList</div>
-    <div>LogOut</div>
+    <div><%= link_to "Log out", "/users/logout", :method => :delete %></div>
   </div>
   <% end %>
 </div>

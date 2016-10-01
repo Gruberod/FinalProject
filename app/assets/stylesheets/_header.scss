@@ -1,6 +1,7 @@
 .top_section {
   display: flex;
   flex-direction: column;
+  font-variant: small-caps;
 }
 
 .logo_bar {
@@ -24,4 +25,8 @@
   font-weight: bolder;
   justify-content: space-around;
   align-items: center;
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
 }

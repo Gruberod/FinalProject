@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="wrapper">
+    <h1>Shopping List</h1>
+    <div class="shopping-list-container">
+      <% @recipes.each do |recipe| %>
+        <% recipe.ingredients.each do |ingredient| %>
+        <div class="shopping-list-item">
+          <td><%= ingredient.name %></td>
+        </div>
+        <% end %>
+      <% end %>
+    </table>
+  </div>
+  </div>
+</div>
+.

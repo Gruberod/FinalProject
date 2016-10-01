@@ -14,12 +14,43 @@
   background-repeat: repeat-y;
   height: 100%;
   overflow: auto;
+    font-variant: small-caps;
 }
 
 .wrapper {
   width: 60%;
   background-color: white;
   overflow: auto;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipes-container > .heading {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.recipe-single {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-variant: small-caps;
+  word-wrap: break-word;
+}
+
+.recipe-single img {
+margin-top: 10px;
+}
+
+.recipe-single a:hover {
+  color: #d64862;
 }
 
 img {

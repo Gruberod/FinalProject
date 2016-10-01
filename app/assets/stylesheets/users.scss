@@ -18,6 +18,10 @@
   height: 575px;
 }
 
+.heading {
+  margin-top: 30px;
+  font-variant: small-caps;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -26,4 +30,12 @@
 .form-input {
   font-size: 20px;
   margin: 10px;
+}
+
+.submit-btn input {
+  background-color: #e0c0c6;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
 }

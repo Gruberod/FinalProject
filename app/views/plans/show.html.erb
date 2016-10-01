@@ -1,23 +1,23 @@
-<div class="wrapper">
-  <div class="main_section">
-    <h3><%= @my_plan.name %></h3>
-    <div class="plan_recipes">
-      <% @my_plan.recipes.each do |recipe| %>
-        <p>
-          <%= recipe.name %>
-          <!-- <% recipe.ingredients.each do |ingredient| %>
-            <p>
-              <%= ingredient.name %>
-            </p>
-          <% end %> -->
-        </p>
-      <% end %>
-      <%= link_to "Generate ShoppingList", "/shopping_lists", :controller => "shopping_lists",
-            :action => "create",
-            :plan_id => @my_plan.id %>
+<div class="main">
+  <div class="wrapper">
+    <div class="heading">
+      <h1>MyPlan</h1>
     </div>
-    <div>
-
+    <h2><%= @my_plan.name %></h2>
+    <div class="plan-container">
+      <div class="create-btn">
+        <button>
+          <%= link_to "Generate ShoppingList", shopping_lists_path(@my_plan), method: :post %>
+        </button>
+      </div>
+      <div class="plan-list">
+        <% @my_plan.recipes.each do |recipe| %>
+          <p>
+            <%= recipe.name %>
+            <%= link_to " x remove", shopping_lists_path(@my_plan), method: :delete, :class=>"remove-btn" %>
+          </p>
+        <% end %>
+      </div>
     </div>
-</div>
+  </div>
 </div>

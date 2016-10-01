@@ -1,3 +1,35 @@
 // Place all the styles related to the plans controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remove-btn {
+  margin-left: 30px;
+}
+
+.create-btn button {
+  background-color: #d64862;
+  border-radius: 5px;
+}
+
+.wrapper > .heading {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.plan-single {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-variant: small-caps;
+  word-wrap: break-word;
+}
+
+.plan-single a:hover {
+  color: #d64862;
+}
