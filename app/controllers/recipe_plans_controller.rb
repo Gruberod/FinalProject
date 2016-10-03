@@ -6,4 +6,10 @@ class RecipePlansController < ApplicationController
 
     redirect_to plan_path(plan)
   end
+
+  def destroy
+    recipe_plan = RecipePlan.find(params[:id])
+    recipe_plan.delete
+    redirect_to plan_path(recipe_plan.plan_id)
+  end
 end

@@ -13,14 +13,13 @@ class ShoppingListsController < ApplicationController
 
   def show
     @recipes = ShoppingList.find(params[:id]).plan.recipes
-    # @ingredient_amount = Recipe.find(params[:id]).recipe_ingredients
+    recipes_ids = @recipes.map(&:id)
+    @grouped_ingredients = RecipeIngredient.where(recipe_id: recipes_ids).group_by(&:ingredient_id)
   end
 
   def update
-
   end
 
   def destroy
-
   end
 end

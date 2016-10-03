@@ -15,12 +15,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 575px;
+  height: 625px;
 }
 
 .greeting {
-  font-size: 40px;
-  margin: 20px;
+  font-size: 35px;
+  margin: 50px;
 }
 
 .menu {
@@ -28,6 +28,14 @@
   margin: 10px;
 }
  a {
+
   text-decoration: none;
   color: black;
  }
+ a:hover {
+  color: #d64862;
+ }
+
+.picture img {
+  margin-top: 40px;
+}

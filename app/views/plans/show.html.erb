@@ -11,10 +11,11 @@
         </button>
       </div>
       <div class="plan-list">
-        <% @my_plan.recipes.each do |recipe| %>
+        <% @my_plan.recipe_plans.each do |recipe_plan| %>
+          <% recipe = recipe_plan.recipe %>
           <p>
             <%= recipe.name %>
-            <%= link_to " x remove", shopping_lists_path(@my_plan), method: :delete, :class=>"remove-btn" %>
+            <%= button_to "delete", {:controller => :recipe_plans, :action => 'destroy', :id => recipe_plan.id }, :method => :delete %>
           </p>
         <% end %>
       </div>
