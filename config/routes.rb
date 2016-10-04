@@ -7,9 +7,14 @@ Rails.application.routes.draw do
   post 'users/new' => 'users#create'
   post 'recipes/:id' => 'recipe_plans#create', as: 'recipe_plans'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :recipes
-  resources :shopping_lists, only: [:index, :show, :create, :edit, :destroy]
+  resources :recipes do
+    get :autocomplete_recipe_name, :on => :collection
+  end
+  resources :shopping_lists, only: [:index, :show]
   resources :plans, only: [:index, :show, :create, :edit, :update, :destroy]
   resources :recipe_plans, only: [:create, :destroy]
   get "/", to: 'home#index'
+  resources :ingredients, only: [:index, :create] do
+    get :autocomplete_ingredient_name, :on => :collection
+  end
 end

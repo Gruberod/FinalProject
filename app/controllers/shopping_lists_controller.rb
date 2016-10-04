@@ -16,10 +16,4 @@ class ShoppingListsController < ApplicationController
     recipes_ids = @recipes.map(&:id)
     @grouped_ingredients = RecipeIngredient.where(recipe_id: recipes_ids).group_by(&:ingredient_id)
   end
-
-  def update
-  end
-
-  def destroy
-  end
 end

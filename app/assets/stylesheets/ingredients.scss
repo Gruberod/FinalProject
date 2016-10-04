@@ -1,3 +1,11 @@
 // Place all the styles related to the ingredients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ingredient-form-input {
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}

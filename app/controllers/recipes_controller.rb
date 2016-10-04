@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  autocomplete :recipe, :name, :full => true
   def index
     @recipes = Recipe.all
   end

@@ -1,15 +1,22 @@
 <div class="main">
   <div class="wrapper">
-    <h1 class="test">Shopping List</h1>
+    <h1>Shopping List</h1>
     <a href="javascript:window.print()" class="print">Print list</a>
     <div class="shopping-list-container">
       <% @grouped_ingredients.each do |ingredient_id, recipe_ingredient| %>
       <div class="shopping-list-item">
-      <%= Ingredient.find(ingredient_id).name %>
-        <% recipe_ingredient.each do |item| %>
-          <%= item.amount %>
-        <% end %>
-      </div>
+        <div>
+          <button class="delete-me">X</button>
+        </div>
+        <div class="shopping-list-ingredient">
+        <%= Ingredient.find(ingredient_id).name %>
+          <% recipe_ingredient.each do |item| %>
+        </div>
+          <div class="shopping-list-amount">
+            <%= item.amount %>
+          <% end %>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>

@@ -3,31 +3,15 @@
     <div class="heading">
       <h1>New user</h1>
     </div>
-    <!-- <div>
-      <% if @msg.errors.any? %>
-        <div id="error_explanation">
-
-          <h2><%= pluralize(@msg.errors.count, "error") %> prohibited this msg from being saved:</h2>
-
-          <ul>
-            <% @msg.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %> -->
-    <% if @msg.errors.any? %>
-        <div id="error_explanation">
-
-          <h2><%= pluralize(@msg.errors.count, "error") %> prohibited this msg from being saved:</h2>
-
-          <ul>
-            <% @msg.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
+    <div>
+        <% if @user.errors.any? %>
+          <div id="error_explanation">
+              <% @user.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+          </div>
+        <% end %>
+    </div>
     <div>
       <div class="form">
         <%= form_tag '/users/new' do %>

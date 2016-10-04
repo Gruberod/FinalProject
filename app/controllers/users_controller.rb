@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def new
+    @user = User.new
   end
 
   def create
@@ -8,7 +9,8 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to "/recipes", alert: "User created successfully."
     else
-      redirect_to "/", alert: "Error creating user."
+
+      render "new"
     end
   end
 

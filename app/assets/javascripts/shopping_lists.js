@@ -3,6 +3,6 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready(function(){
   $(".delete-me").click(function(e) {
-    $(this).parent().remove();
+    $(this).closest(".shopping-list-item").remove();
   });
 })
