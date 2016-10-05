@@ -4,7 +4,7 @@
 .main {
   display: flex;
   justify-content: center;
-  background-image: url(image-url('background.jpg'));
+  background-image: image-url('background.jpg');
   background-size: cover;
   background-repeat: repeat-y;
 }
