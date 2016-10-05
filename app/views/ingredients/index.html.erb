@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h1>Suggest recipes</h1>
     <div class="form">
-      <%= form_tag('/ingredients', :method => :post) do %>
+      <%= form_tag(suggestion_path, method: :get) do %>
         <div class="ingredient-form-input">
           <%= label_tag 'Ingredient 1'%>
           <%= autocomplete_field_tag 'ingredient1', '', autocomplete_ingredient_name_ingredients_path %>

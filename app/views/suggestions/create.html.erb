@@ -2,10 +2,12 @@
   <div class="wrapper">
     <h1>Suggest recipes</h1>
     <div class="recipe-suggest-container">
-    <% @recipe_sort.each do |recipe| %>
+    <% @recipe_sort.each do |recipe_sort_item| %>
       <div class="recipe-suggest-item">
       <!-- add links -->
-      <%= recipe.first %>
+      <% recipe_id = recipe_sort_item.first %>
+      <% recipe = Recipe.find(recipe_id) %>
+      <%= link_to recipe.name, recipe_path(recipe) %>
       </div>
     <% end %>
     </div>
