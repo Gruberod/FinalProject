@@ -19,14 +19,15 @@ class IngredientsController < ApplicationController
     recipes = recipes.flatten
     recipes = recipes.select{|recipe| recipe != nil}
 
-      recipe_count = Hash.new(0)
-      recipes.each do |recipe|
-        recipe_count[recipe.name] += 1
-      end
-      byebug
+    recipe_count = Hash.new(0)
+    recipes.each do |recipe|
+      recipe_count[recipe.name] += 1
+    end
+    @recipe_sort = recipe_count.sort_by { |k,v| v }.last(3)
+    render '/ingredients/recipe_suggestion'
   end
 
-  def suggest_recipe
-
+  def recipe_suggestion
+    @recipe_sort
   end
 end

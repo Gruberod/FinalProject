@@ -4,22 +4,28 @@
     <div class="form">
       <%= form_tag('/ingredients', :method => :post) do %>
         <div class="ingredient-form-input">
+          <%= label_tag 'Ingredient 1'%>
           <%= autocomplete_field_tag 'ingredient1', '', autocomplete_ingredient_name_ingredients_path %>
         </div>
         <div class="ingredient-form-input">
+          <%= label_tag 'Ingredient 2'%>
           <%= autocomplete_field_tag 'ingredient2', '', autocomplete_ingredient_name_ingredients_path %>
         </div>
         <div class="ingredient-form-input">
+          <%= label_tag 'Ingredient 3'%>
           <%= autocomplete_field_tag 'ingredient3', '', autocomplete_ingredient_name_ingredients_path %>
         </div>
         <div class="ingredient-form-input">
+          <%= label_tag 'Ingredient 4'%>
           <%= autocomplete_field_tag 'ingredient4', '', autocomplete_ingredient_name_ingredients_path %>
         </div>
         <div class="ingredient-form-input">
+          <%= label_tag 'Ingredient 5'%>
           <%= autocomplete_field_tag 'ingredient5', '', autocomplete_ingredient_name_ingredients_path %>
         </div>
-
-        <%= submit_tag%>
+        <div class="form-input submit-btn">
+          <%= submit_tag 'Suggest recipe'%>
+        </div>
       <% end %>
     </div>
   </div>

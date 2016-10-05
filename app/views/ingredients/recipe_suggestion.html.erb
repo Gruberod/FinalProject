@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="wrapper">
+    <h1>Suggest recipes</h1>
+    <div class="recipe-suggest-container">
+    <% @recipe_sort.each do |recipe| %>
+      <div class="recipe-suggest-item">
+      <!-- add links -->
+      <%= recipe.first %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
