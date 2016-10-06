@@ -10,13 +10,4 @@ class RecipesController < ApplicationController
     @my_recipe_ingredients = Recipe.find(params[:id]).ingredients
     @ingredient_amount = Recipe.find(params[:id]).recipe_ingredients
   end
-
-  def create
-  end
-
-  def edit
-  end
-
-  def delete
-  end
 end

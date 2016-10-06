@@ -12,11 +12,4 @@ class PlansController < ApplicationController
     RecipePlan.create(recipe_id: params[:plan][:recipe_id], plan_id: plan.id)
     redirect_to plan_path(plan)
   end
-
-  def update
-  end
-
-  def destroy
-  end
-
 end

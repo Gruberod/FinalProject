@@ -217,7 +217,7 @@ RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: onion_powder.id, a
 RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: chicken.id, amount: "1 cut into 10 pieces")
 RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: buttermilk.id, amount: "1 cup")
 RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: eggs.id, amount: "1")
-RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: all_purpouse_flour).id, amount: "3 cups")
+RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: all_purpouse_flour.id, amount: "3 cups")
 RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: cornstarch.id, amount: "1 tablespoon")
 RecipeIngredient.create(recipe_id: recipe6.id, ingredient_id: peanut_oil.id, amount: "for frying")
 

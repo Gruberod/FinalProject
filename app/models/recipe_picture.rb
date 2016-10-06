@@ -1,3 +1,0 @@
-class RecipePicture < ApplicationRecord
-
-end
