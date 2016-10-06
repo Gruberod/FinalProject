@@ -29,21 +29,22 @@
       <h3>Preparation</h3>
       <p><%= @my_recipe.description %></p>
     </div>
-
-    <div class="add-to-plan">
-      <%= form_tag recipe_plans_path do %>
-        <%= hidden_field_tag :recipe_id, @my_recipe.id %>
-        <%= select_tag :plan_id, options_from_collection_for_select(current_user.plans, "id", "name") %>
-    <!-- make inactive if there is no plan yet -->
-        <%= submit_tag "Add this recipe to a plan!" %>
-      <% end %>
-    </div>
     <div class="create-plan">
       <%= form_for @plan do |f| %>
         <%= f.hidden_field :recipe_id, value: @my_recipe.id %>
         <%= f.text_field :name %>
-        <%= f.submit "Create a new plan a add recipe!" %>
+        <%= f.submit "Create new MyPlan and add recipe!" %>
       <% end %>
     </div>
+    <% if current_user.plans.any? %>
+    <div class="add-to-plan">
+        <%= form_tag recipe_plans_path do %>
+          <%= hidden_field_tag :recipe_id, @my_recipe.id %>
+          <%= select_tag :plan_id, options_from_collection_for_select(current_user.plans, "id", "name") %>
+      <!-- make inactive if there is no plan yet -->
+          <%= submit_tag "Pick existing MyPlan and add recipe!" %>
+        <% end %>
+    </div>
+    <% end %>
   </div>
 </div>

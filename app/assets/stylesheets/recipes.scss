@@ -12,7 +12,7 @@
   background-image: image-url('background.jpg');
   background-size: cover;
   background-repeat: repeat-y;
-  height: 100%;
+  height: calc(100vh - 109px);
   overflow: auto;
   font-variant: small-caps;
 }
@@ -35,7 +35,7 @@
   text-decoration: underline;
 }
 
-.recipe-single {
+.recipe-single a {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;

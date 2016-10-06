@@ -12,11 +12,13 @@
       </div>
       <div class="plan-list">
         <% @my_plan.recipe_plans.each do |recipe_plan| %>
+        <div class="plan-list-item">
           <% recipe = recipe_plan.recipe %>
           <p>
+            <%= button_to "X", {:controller => :recipe_plans, :action => 'destroy', :id => recipe_plan.id }, class: 'delete-me', :method => :delete %>
             <%= recipe.name %>
-            <%= button_to "delete", {:controller => :recipe_plans, :action => 'destroy', :id => recipe_plan.id }, :method => :delete %>
           </p>
+        </div>
         <% end %>
       </div>
     </div>

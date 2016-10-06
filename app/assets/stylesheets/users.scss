@@ -1,22 +1,6 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.main {
-  display: flex;
-  justify-content: center;
-  background-image: image-url('background.jpg');
-  background-size: cover;
-  background-repeat: repeat-y;
-}
-
-.wrapper {
-  width: 60%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .heading {
   margin-top: 30px;
   font-variant: small-caps;

@@ -16,6 +16,10 @@
   border-radius: 5px;
 }
 
+.create-btn a:hover {
+  color: inherit;
+}
+
 .wrapper > .heading {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -32,4 +36,13 @@
 
 .plan-single a:hover {
   color: #d64862;
+}
+
+.plan-list {
+  margin-top: 20px;
+}
+
+.plan-list-item {
+  display: flex;
+  align-items: center;
 }
